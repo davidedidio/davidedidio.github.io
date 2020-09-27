@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Hello there"
+title:  "Hello World!"
 date:   2020-09-27 15:10:38 +0200
-categories: jekyll update
+categories: personal
 ---
 ## Welcome to my websites first post!
 
