@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --sidebar-w: 220px;
+    --max-content-w: 1024px;
+    --accent: #D85A30;
+    --accent-light: #FAECE7;
+    --bg: #F5F3EE;
+    --fg: #1A1A18;
+    --muted: #888780;
+    --border: rgba(0, 0, 0, 0.10);
+    --card-bg: #ffffff;
+    --font-serif: 'DM Serif Display', serif;
+    --font-mono: 'DM Mono', monospace;
+    --font-sans: 'Outfit', sans-serif;
+}
+
+body {
+    font-family: var(--font-sans), sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

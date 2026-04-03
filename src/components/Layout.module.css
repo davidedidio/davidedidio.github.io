@@ -1,0 +1,15 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main {
+    margin-left: calc(min(max(var(--max-content-w) + var(--sidebar-w) * 2 - 100vw, 0px), var(--sidebar-w)));
+    transition: margin-left 0.3s ease;
+    flex: 1 1;
+    min-height: 100vh;
+}
+
+.mainExpanded {
+    margin-left: 0;
+}

@@ -1,3 +1,5 @@
 # davidedidio.github.io
 
-Personal website.
+Personal website for cool and random tools. 
+
+link: https://davidedidio.github.io/

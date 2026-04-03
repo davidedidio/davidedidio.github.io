@@ -1,0 +1,95 @@
+.wrap {
+    padding: 48px;
+    margin-left: 0;
+}
+
+.eyebrow {
+    font-family: var(--font-mono), serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 14px;
+}
+
+.accentBar {
+    width: 40px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-family: var(--font-serif), serif;
+    font-size: 26px;
+    line-height: 1.35;
+    margin-bottom: 24px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.body {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #3A3A37;
+    margin-bottom: 16px;
+}
+
+.divider {
+    height: 1px;
+    background: var(--border);
+    margin: 32px 0;
+}
+
+.statRow {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    flex: 1;
+    min-width: 80px;
+}
+
+.statNum {
+    font-family: var(--font-serif), serif;
+    font-size: 40px;
+    line-height: 1;
+    color: var(--accent);
+    font-weight: 400;
+}
+
+.statLabel {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+    font-family: var(--font-mono), serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.link {
+    font-family: var(--font-mono), serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--fg);
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.link:hover {
+    background: var(--fg);
+    color: var(--bg);
+}

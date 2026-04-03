@@ -1,0 +1,28 @@
+.pageHeader {
+    padding: 48px 48px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+    font-family: var(--font-mono), serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.pageTitle {
+    font-family: var(--font-serif), serif;
+    font-size: 52px;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+    font-weight: 400;
+}
+
+.body {
+    padding: 40px 48px;
+    font-size: 15px;
+    color: var(--muted);
+}

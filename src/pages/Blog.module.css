@@ -1,0 +1,128 @@
+.pageHeader {
+    padding: 48px 48px 0;
+    border-bottom: 0.5px solid var(--border);
+    margin-bottom: 0;
+}
+
+.eyebrow {
+    font-family: var(--font-mono), monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.pageTitle {
+    font-family: var(--font-serif), serif;
+    font-size: 52px;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+    font-weight: 400;
+}
+
+.timeline {
+    padding: 40px 48px;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 48px;
+    top: 40px;
+    bottom: 40px;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--accent), var(--border));
+}
+
+.yearBlock {
+    margin-bottom: 40px;
+}
+
+.yearLabel {
+    font-family: var(--font-serif), serif;
+    font-size: 13px;
+    font-style: italic;
+    color: var(--muted);
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+
+.postCard {
+    margin-left: 24px;
+    margin-bottom: 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 26px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+.postCard::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+}
+
+.postCard:hover {
+    transform: translateX(4px);
+}
+
+.postMeta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.postDate {
+    font-family: var(--font-mono), monospace;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.postTag {
+    font-family: var(--font-mono), monospace;
+    font-size: 10px;
+    background: var(--accent-light);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.postTitle {
+    font-family: var(--font-serif), serif;
+    font-size: 20px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+}
+
+.postExcerpt {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+.postRead {
+    font-family: var(--font-mono), monospace;
+    font-size: 10px;
+    color: var(--accent);
+    margin-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+}
