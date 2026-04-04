@@ -1,5 +1,7 @@
 import styles from './About.module.css';
 import logo from '../assets/robot-icon.svg';
+import {tools} from "../data/tools.ts";
+import {posts} from "../data/posts.ts";
 
 export default function About() {
     return (
@@ -35,16 +37,17 @@ export default function About() {
 
             <div className={styles.statRow}>
                 <div className={styles.stat}>
-                    <div className={styles.statNum}>12</div>
+                    <div className={styles.statNum}>{posts.length}</div>
                     <div className={styles.statLabel}>Posts</div>
                 </div>
                 <div className={styles.stat}>
-                    <div className={styles.statNum}>4</div>
+                    <div className={styles.statNum}>{tools.length}</div>
                     <div className={styles.statLabel}>Tools</div>
                 </div>
                 <div className={styles.stat}>
-                    <div className={styles.statNum}>3</div>
-                    <div className={styles.statLabel}>Years online</div>
+                    <div
+                        className={styles.statNum}>{new Date(Math.max(...posts.map(x => Date.parse(x.date)))).toDateString()}</div>
+                    <div className={styles.statLabel}>Last post</div>
                 </div>
             </div>
 

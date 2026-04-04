@@ -1,0 +1,168 @@
+.panel {
+    width: 280px;
+    flex-shrink: 0;
+    border-right: 0.5px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header {
+    padding: 28px 24px 14px;
+    border-bottom: 0.5px solid var(--border);
+    flex-shrink: 0;
+}
+
+.eyebrow {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 4px;
+}
+
+.title {
+    font-family: var(--font-serif);
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+.list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px 24px;
+}
+
+.row { margin-bottom: 14px; }
+
+.rowTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.species {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.countPill {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+    background: none;
+    border: 0.5px solid var(--border);
+    border-radius: 20px;
+    padding: 2px 8px;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.countPill:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.goalInput {
+    width: 52px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    border: 0.5px solid var(--accent);
+    border-radius: 6px;
+    padding: 2px 6px;
+    background: var(--card-bg);
+    color: var(--fg);
+    outline: none;
+}
+
+.deleteBtn {
+    font-size: 11px;
+    background: none;
+    border: 0.5px solid #D85A30;
+    color: #D85A30;
+    border-radius: 6px;
+    padding: 2px 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.deleteBtn:hover {
+    background: #D85A30;
+    color: #fff;
+}
+
+.saveBtn {
+    font-size: 11px;
+    background: none;
+    border: none;
+    background: var(--fg);
+    color: #F5F3EE;
+    border-radius: 6px;
+    padding: 2px 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.saveBtn:hover {
+    background: var(--accent);
+}
+
+.track {
+    height: 3px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease, background 0.3s;
+}
+
+.addRow {
+    display: flex;
+    gap: 6px;
+    padding: 12px 24px 18px;
+    border-top: 0.5px solid var(--border);
+    flex-shrink: 0;
+}
+
+.speciesInput {
+    flex: 1;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    border: 0.5px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 10px;
+    background: var(--card-bg);
+    color: var(--fg);
+    outline: none;
+}
+
+.speciesInput:focus { border-color: var(--accent); }
+
+.addBtn {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    background: var(--fg);
+    color: #F5F3EE;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+
+
+.addBtn:hover { background: var(--accent); }

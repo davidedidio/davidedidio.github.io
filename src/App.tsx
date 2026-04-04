@@ -3,7 +3,7 @@ import Layout from './components/Layout';
 import Blog from './pages/Blog';
 import About from './pages/About';
 import Tools from './pages/Tools';
-import ToolPlaceholder from './tools/tool1/ToolPlaceholder';
+import SeedlingTracker from './tools/seedlings/SeedlingTracker.tsx';
 import './styles/global.css';
 import {SidebarProvider} from "./context/SidebarContext.tsx";
 import Redirect from "./components/Redirect.tsx";
@@ -17,7 +17,7 @@ export default function App() {
                         <Route index element={<Blog/>}/>
                         <Route path="about" element={<About/>}/>
                         <Route path="tools" element={<Tools/>}/>
-                        <Route path="tools/tool-one" element={<ToolPlaceholder/>}/>
+                        <Route path="tools/tool-one" element={<SeedlingTracker/>}/>
                         <Route path="tools/tool-two"
                                element={<Redirect prop='https://davidedidio.github.io/serpentaire_compagnon/'/>}/>
                     </Route>

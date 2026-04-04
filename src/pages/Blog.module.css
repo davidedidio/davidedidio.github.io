@@ -83,7 +83,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 8px;
+    margin-bottom: -2%;
 }
 
 .postDate {

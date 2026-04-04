@@ -6,7 +6,7 @@ export const tools: Tool[] = [
         name: 'Seedlings',
         description: 'Helps manage your seedlings',
         icon: '🌱',
-        status: 'soon',
+        status: 'live',
         path: '/tools/tool-one',
     },
     {
